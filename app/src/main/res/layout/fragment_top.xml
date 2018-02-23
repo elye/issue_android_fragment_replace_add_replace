@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.elyeproj.myapplication.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add F1" />
+
+            <Button
+                android:id="@+id/replace_f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="replace F1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add F2" />
+
+            <Button
+                android:id="@+id/replace_f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="replace F2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add F3" />
+
+            <Button
+                android:id="@+id/replace_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="replace F3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add F4" />
+
+            <Button
+                android:id="@+id/replace_f4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="replace F4" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
