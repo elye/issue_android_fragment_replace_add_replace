@@ -46,16 +46,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun addFragment(fragment: Fragment, name: String) {
         supportFragmentManager.beginTransaction().add(R.id.container, fragment)
-                .addToBackStack(name).commitAllowingStateLoss()
+                .addToBackStack(name).commit()
     }
 
     private fun replaceFragment(fragment: Fragment, name: String) {
         supportFragmentManager.beginTransaction().replace(R.id.container, fragment)
-                .addToBackStack(name).commitAllowingStateLoss()
+                .addToBackStack(name).commit()
     }
 
     override fun onBackPressed() {
-
         if (supportFragmentManager.backStackEntryCount > 0) {
             supportFragmentManager.popBackStackImmediate()
         } else {

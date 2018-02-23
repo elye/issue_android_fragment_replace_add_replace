@@ -14,9 +14,8 @@ class OneFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater!!.inflate(R.layout.fragment_one, container, false)
+        return inflater.inflate(R.layout.fragment_one, container, false)
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -26,7 +25,7 @@ class OneFragment : Fragment() {
         (activity as AppCompatActivity).setSupportActionBar(toolbar_actionbar)
 
     }
-
+    
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item.itemId == android.R.id.home) {
             activity?.onBackPressed()
