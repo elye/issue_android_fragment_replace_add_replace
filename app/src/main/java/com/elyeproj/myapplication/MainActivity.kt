@@ -45,12 +45,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addFragment(fragment: Fragment, name: String) {
-        supportFragmentManager.beginTransaction().add(R.id.container, fragment)
+        supportFragmentManager.beginTransaction().add(R.id.container, fragment, name)
                 .addToBackStack(name).commit()
     }
 
     private fun replaceFragment(fragment: Fragment, name: String) {
-        supportFragmentManager.beginTransaction().replace(R.id.container, fragment)
+        supportFragmentManager.beginTransaction().replace(R.id.container, fragment, name)
                 .addToBackStack(name).commit()
     }
 
