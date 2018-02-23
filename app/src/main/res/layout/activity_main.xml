@@ -1,5 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@+id/container"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    android:orientation="vertical"
+    tools:context="com.elyeproj.myapplication.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Fragment 1" />
+
+            <Button
+                android:id="@+id/replace_f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rReplace with Fragment 1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Fragment 2" />
+
+            <Button
+                android:id="@+id/replace_f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace with Fragement 2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Fragment 3" />
+
+            <Button
+                android:id="@+id/replace_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace with Fragement 3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_f4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Fragment 4" />
+
+            <Button
+                android:id="@+id/replace_f4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace with Fragement 4" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
