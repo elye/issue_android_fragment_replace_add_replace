@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.fragment_one.*
 
 class OneFragment : Fragment() {
 
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_one, container, false)
     }
@@ -20,12 +19,10 @@ class OneFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         toolbar_actionbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp)
-
         setHasOptionsMenu(true)
         (activity as AppCompatActivity).setSupportActionBar(toolbar_actionbar)
-
     }
-    
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item.itemId == android.R.id.home) {
             activity?.onBackPressed()
@@ -34,4 +31,4 @@ class OneFragment : Fragment() {
             super.onOptionsItemSelected(item)
         }
     }
-}// Required empty public constructor
+}
