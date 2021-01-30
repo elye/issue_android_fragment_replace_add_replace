@@ -2,6 +2,7 @@ package com.elyeproj.myapplication
 
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
 import android.view.LayoutInflater
@@ -21,6 +22,7 @@ class TwoFragment : Fragment() {
         toolbar_actionbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp)
         setHasOptionsMenu(true)
         (activity as AppCompatActivity).setSupportActionBar(toolbar_actionbar)
+        Log.d("TrackingMe", "I am here Fragment Two")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
