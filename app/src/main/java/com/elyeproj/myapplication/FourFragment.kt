@@ -2,8 +2,8 @@ package com.elyeproj.myapplication
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -20,7 +20,6 @@ class FourFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         toolbar_actionbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp)
-
         setHasOptionsMenu(true)
         (activity as AppCompatActivity).setSupportActionBar(toolbar_actionbar)
     }

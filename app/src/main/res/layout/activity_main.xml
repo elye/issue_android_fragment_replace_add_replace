@@ -33,7 +33,7 @@
                 android:id="@+id/replace_f1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="rReplace with Fragment 1" />
+                android:text="Replace with Fragment 1" />
         </LinearLayout>
 
         <LinearLayout
@@ -51,7 +51,7 @@
                 android:id="@+id/replace_f2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Replace with Fragement 2" />
+                android:text="Replace with Fragment 2" />
         </LinearLayout>
 
         <LinearLayout
@@ -69,7 +69,7 @@
                 android:id="@+id/replace_f3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Replace with Fragement 3" />
+                android:text="Replace with Fragment 3" />
         </LinearLayout>
 
         <LinearLayout
@@ -87,7 +87,7 @@
                 android:id="@+id/replace_f4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Replace with Fragement 4" />
+                android:text="Replace with Fragment 4" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
